@@ -1,0 +1,17 @@
+mkdir -p projects/my_project/directory1/subdirectory1
+mkdir -p projects/my_project/directory2
+mkdir -p projects/my_project/directory3/subdirectory2
+echo "Hello from JS" > projects/my_project/directory2/hello.txt
+
+git init
+git remote add origin https://github.com/koog7/homework-49.git
+git add .
+git status
+git commit -m 'Первый коммит и добавление hello.txt'
+git push --set-upstream origin master
+
+touch projects/my_project/directory1/subdirectory1/.gitkeep
+touch projects/my_project/directory3/subdirectory2/.gitkeep
+git add .
+git commit -m 'Добавил directory1 и directory3 используя .getkeep'
+git push
