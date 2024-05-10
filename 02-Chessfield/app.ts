@@ -2,7 +2,7 @@ const boardSize = 8;
 const whiteSymbol = "██";
 const blackSymbol = "  ";
 
-function printChessboard() {
+const printChessboard = () => {
     for (let row = 0; row < boardSize; row++) {
         let line = "";
         for (let col = 0; col < boardSize; col++) {
